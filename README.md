@@ -1,5 +1,5 @@
-# Gucci
-#### A base theme for throwing up custom ACF Blocks super quick by Anna Cantrell 🌈
+# Triforce
+#### A base theme for throwing up custom ACF Blocks super quick by TriMark Digital
 This theme uses [SCSS](https://sass-lang.com/).
 
 ## Development

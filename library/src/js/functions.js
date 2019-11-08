@@ -5,8 +5,8 @@
  * theme. This is written using jQuery to simplify code complexity.
  *
  * @package WordPress
- * @subpackage Gucci
- * @since Gucci 1.0
+ * @subpackage Triforce
+ * @since Triforce 1.0
  */
 
 // jQuery

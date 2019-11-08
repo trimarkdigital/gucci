@@ -5,8 +5,8 @@
  * This file is the Front Page template for the WordPress theme.
  *
  * @package WordPress
- * @subpackage Gucci
- * @since Gucci 1.0
+ * @subpackage Triforce
+ * @since Triforce 1.0
  */
 
 get_header(); ?>

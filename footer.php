@@ -6,8 +6,8 @@
  * bottom part of the HTML document.
  *
  * @package WordPress
- * @subpackage Gucci
- * @since Gucci 1.0
+ * @subpackage Triforce
+ * @since Triforce 1.0
  */
 
 ?>

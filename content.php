@@ -6,8 +6,8 @@
  * regular post content area.
  *
  * @package WordPress
- * @subpackage Gucci
- * @since Gucci 1.0
+ * @subpackage Triforce
+ * @since Triforce 1.0
  */
 
 ?>

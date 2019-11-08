@@ -9,7 +9,7 @@ function my_acf_init() {
 			'name'				=> 'testimonial',
 			'title'				=> __('Testimonial'),
 			'description'		=> __('A custom testimonial block.'),
-			'render_callback'	=> 'gucci_acf_block_render_callback',
+			'render_callback'	=> 'triforce_acf_block_render_callback',
 			'category'			=> 'formatting',
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'testimonial', 'quote' ),
@@ -18,7 +18,7 @@ function my_acf_init() {
 			'name'				=> 'hero',
 			'title'				=> __('Hero'),
 			'description'		=> __('Homepage Hero'),
-			'render_callback'	=> 'gucci_acf_block_render_callback',
+			'render_callback'	=> 'triforce_acf_block_render_callback',
 			'category'			=> 'homepage',
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'homepage', 'hero' ),
@@ -26,7 +26,7 @@ function my_acf_init() {
 	}
 }
 
-function gucci_acf_block_render_callback( $block ) {
+function triforce_acf_block_render_callback( $block ) {
 	$slug = str_replace('acf/', '', $block['name']);
 	// include a template part from within the "template-parts/block" folder
 	if( file_exists( get_theme_file_path("/library/template-parts/blocks/section-{$slug}.php") ) ) {
@@ -35,7 +35,7 @@ function gucci_acf_block_render_callback( $block ) {
 }
 
 // Add custom Block Categories
-function gucci_block_categories( $categories, $post ) {
+function triforce_block_categories( $categories, $post ) {
     return array_merge(
         array(
             array(
@@ -46,11 +46,11 @@ function gucci_block_categories( $categories, $post ) {
 				$categories
     );
 }
-add_filter( 'block_categories', 'gucci_block_categories', 10, 2 );
+add_filter( 'block_categories', 'triforce_block_categories', 10, 2 );
 
 // Disallow most default blocks
-add_filter( 'allowed_block_types', 'gucci_allowed_block_types' );
-function gucci_allowed_block_types( $allowed_blocks ) {
+add_filter( 'allowed_block_types', 'triforce_allowed_block_types' );
+function triforce_allowed_block_types( $allowed_blocks ) {
 	return array(
 		'core/image',
 		'core/paragraph',

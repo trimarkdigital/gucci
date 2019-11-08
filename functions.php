@@ -6,8 +6,8 @@
  * theme functionality.
  *
  * @package WordPress
- * @subpackage Gucci
- * @since Gucci 1.0
+ * @subpackage Triforce
+ * @since Triforce 1.0
  */
 
  /* Remove user's access to theme editor */
@@ -19,16 +19,16 @@ define( 'DISALLOW_FILE_EDIT', true );
  * The code below registers custom WordPress styles using wp_register_style()
  * function.
  *
- * @since Gucci 1.0
+ * @since Triforce 1.0
  */
 
-function gucci_styles() {
+function triforce_styles() {
 	// Load main stylesheet
-	wp_enqueue_style('gucci-style', get_template_directory_uri() . '/style.css');
+	wp_enqueue_style('triforce-style', get_template_directory_uri() . '/style.css');
 	// Load main javascript
-	wp_enqueue_script('gucci-script', get_template_directory_uri() . '/library/js/functions.min.js', array('jquery'), '1.0', true);
+	wp_enqueue_script('triforce-script', get_template_directory_uri() . '/library/js/functions.min.js', array('jquery'), '1.0', true);
 }
-add_action('wp_enqueue_scripts', 'gucci_styles');
+add_action('wp_enqueue_scripts', 'triforce_styles');
 
 
 /**
@@ -37,16 +37,16 @@ add_action('wp_enqueue_scripts', 'gucci_styles');
  * The code below registers custom WordPress theme features using
  * add_theme_support() function.
  *
- * @since Gucci 1.0
+ * @since Triforce 1.0
  */
 
-function gucci_features() {
+function triforce_features() {
 	// Support title tag
 	add_theme_support('title-tag');
 	// Support featured images
 	add_theme_support('post-thumbnails');
 }
-add_action('after_setup_theme', 'gucci_features');
+add_action('after_setup_theme', 'triforce_features');
 
 /**
  * Register Menus
@@ -54,22 +54,22 @@ add_action('after_setup_theme', 'gucci_features');
  * The code below registers custom WordPress menus using register_my_menus()
  * function.
  *
- * @since Gucci 1.0
+ * @since Triforce 1.0
  */
-function gucci_register_menus() {
+function triforce_register_menus() {
 	register_nav_menus(
 		array( 'main-menu' => __('Main Menu') )
 	);
 }
-add_action('init', 'gucci_register_menus');
+add_action('init', 'triforce_register_menus');
 
 /**
  * Register support for Gutenberg wide alignment
  */
-function gucci_setup() {
+function triforce_setup() {
   add_theme_support( 'align-wide' );
 }
-add_action( 'after_setup_theme', 'gucci_setup' );
+add_action( 'after_setup_theme', 'triforce_setup' );
 
 
 /**
@@ -78,7 +78,7 @@ add_action( 'after_setup_theme', 'gucci_setup' );
  * The code below adds and adjusts various functionality for the Advanced Custom
  * Fields PRO plugin.
  *
- * @since Gucci 1.0
+ * @since Triforce 1.0
  */
 
 if( function_exists('acf_add_options_page') ) {

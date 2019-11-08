@@ -6,8 +6,8 @@
  * the main content area of individual types (posts, pages, etc).
  *
  * @package WordPress
- * @subpackage Gucci
- * @since Gucci 1.0
+ * @subpackage Triforce
+ * @since Triforce 1.0
  */
 
 get_header(); ?>
